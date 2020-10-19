@@ -1,0 +1,11 @@
+mdvl-templates (1.1.0) stable; urgency=medium
+
+  * Switch to version 1.1.0 to be newer than MDPC 1.0 package.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Mon, 19 Oct 2020 22:38:24 +0200
+
+mdvl-templates (1.0.0) stable; urgency=medium
+
+  * Package created with MDPC 2
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Mon, 19 Oct 2020 22:38:22 +0200

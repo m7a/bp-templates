@@ -1,0 +1,86 @@
+% 	Ma_Sys.ma Default Preamble 1.1.0.0, Copyright (c) 2010-2014 Ma_Sys.ma.
+%	For further info send an e-mail to Ma_Sys.ma@web.de.
+%------------------------------------------------------------------[ General ]--
+\documentclass[paper=a4, DIV9, 12pt, abstracton, headings=normal,
+						captions=tableheading]{scrartcl}
+\usepackage[T1]{fontenc}    % These lines are required to read all German and
+\usepackage[utf8]{inputenc} % English characters and create correct output.
+\usepackage[english,german,ngerman]{babel} % ngerman text, german fancyref
+\usepackage[english,german]{fancyref}      % ngerman is not allowed here
+\usepackage[german]{keystroke}             % ex. \Ctrl\keystroke{s}
+% ex. \begin{figure}[htbp] \centering \includegraphics[scale=SCALE]{image}
+\usepackage{graphicx}  % \caption{CAPTION} \label{fig:LABEL}
+% ex. \begin{table}[htbp] \caption{CAPT} \label{tab:LABEL} \centering
+\usepackage{booktabs}  % \begin{tabular}{lll} \toprule \midrule \bottomrule
+\usepackage{url}       % To link URLs \url{http://127.0.0.1:80/}
+\usepackage{kpfonts}   % A font which looks quite well
+
+%-----------------------------------------------------------------[ Optional ]--
+%\usepackage{color}     % Used for colorized Ma_Sys.ma abbreviations
+%\usepackage{tikz}      % TikZ ist kein Zeichenprogramm 
+%\usepackage{mdwlist}   % Lighter lists, ex \begin{itemize*}
+%\usepackage{babelbib}  % Allows you to create a bibliography
+% ex. \lstset{language=LANGUAGE} \lstinputlisting{files/progress.c} OR
+%\usepackage{listings}  % \begin{lstlisting}[float=htbp,caption=C,label=lst:L]
+
+%------------------------------------------------------------[ Customization ]--
+%\usepackage{typearea} % Might improve readability
+
+%---------------------------------------------------------------[ At the End ]--
+\usepackage{microtype} % Better formatting of text (load at the end)
+\usepackage{hyperref}  % Make non-printed hyperlinks (load at the end)
+
+%----------------------------------------------------[ Package Configuration ]--
+%\vrefwarning                    % Comment out this line if possible
+%\bibliographystyle{babunsrt-fl} % often won't fit your needs
+%\pagestyle{headings}            % display chapter above page.
+%\usetikzlibrary{matrix,fadings,calc,positioning,decorations.pathreplacing,%
+%		decorations.text,arrows} % All tikz effects go here if used
+% Default source code formatting
+%\lstset{tabsize=4,columns=fixed,breaklines=true,inputencoding=utf8,%
+%		basicstyle=\scriptsize\ttfamily,showspaces=false,%
+%		showstringspaces=false,showtabs=false,extendedchars=true}
+% See https://groups.google.com/forum/?hl=de&fromgroups=
+% 					#!topic/de.comp.text.tex/Fb4EV8Za5xw
+%\lstset{literate={ä}{{\"a}}1 {ö}{{\"o}}1 {ü}{{\"u}}1 {Ä}{{\"A}}1 {Ö}{{\"O}}1 %
+%							{Ü}{{\"U}}1 {ß}{\ss}1}
+% Give all programming languages you use in your whole document
+%\lstloadlanguages{Java,XML,C,bash,Python}
+% Allows referring to a source code via \Fref{lst:label}
+%\newcommand*{\fancyreflstlabelprefix}{lst}
+%\Frefformat{vario}{\fancyreflstlabelprefix}{Listing\fancyrefdefaultspacing#1#3}
+
+%-----------------------------------------------------------------[ Commands ]--
+% Formats inline commands, e.g.: Type \cmd{java X} to run class X
+\newcommand{\cmd}[1]{{\ttfamily#1}}
+% Colorized abbreviations
+%\newcommand{\mabrev}[2]{\textbf{\textsc{\textsf{\color{#1}[#2]}}}}
+%\definecolor{clrcstat}{rgb}{1,0.3,0}
+%\newcommand{\CSTAT}{\mabrev{clrcstat}{CSTAT}}
+%\definecolor{clrtodo}{rgb}{0,0,0.5}
+%\newcommand{\TODO}{\mabrev{clrtodo}{TODO}}
+%\definecolor{clrok}{rgb}{0.0,0.3,0.0}
+%\newcommand{\OK}{\mabrev{clrok}{OK}}
+%\definecolor{clrfail}{rgb}{0.7,0.0,0.0}
+%\newcommand{\FAIL}{\mabrev{clrfail}{FAIL}}
+%\definecolor{clrtest}{rgb}{0.2,0.9,0.2}
+%\newcommand{\TEST}{\mabrev{clrtest}{TEST}}
+
+%---------------------------------------------------------[ Document Content ]--
+\begin{document}
+
+\author{Linux-Fan}
+\title{Ma\_Sys.ma}
+\maketitle
+
+\tableofcontents
+
+%\listoffigures
+%\listoftables
+
+Data.
+
+%\input...
+%\include...
+
+\end{document}
