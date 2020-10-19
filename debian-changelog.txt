@@ -1,3 +1,9 @@
+mdvl-templates (1.1.1) stable; urgency=medium
+
+  * Add missing ma_new_file script.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Mon, 19 Oct 2020 22:54:58 +0200
+
 mdvl-templates (1.1.0) stable; urgency=medium
 
   * Switch to version 1.1.0 to be newer than MDPC 1.0 package.

@@ -1,0 +1,85 @@
+#!/bin/bash
+# Unfortunately requires bash (some special "read" features are used)
+
+template_dir=/usr/share/mdvl/templates
+
+if [ $# = 0 ]; then
+	clear
+	entries="$(ls $template_dir)"
+	max=$(echo "$entries" | wc -l)
+	selecting=false
+	add=6
+	cat <<EOF
+-------------------------------------------------------------------------
+ Ma_Sys.ma Template File Selector 1.0.0.3, Copyright (c) 2012 Ma_Sys.ma.
+ For further info send an e-mail to Ma_Sys.ma@web.de.
+-------------------------------------------------------------------------
+
+[j] and [k] to select, [enter] or [l] to accept, [h] or [q] to abort.
+
+EOF
+	for i in $entries; do
+		if [ $selecting = true ]
+		then
+			printf " "
+		else
+			# Save current cursor position and draw selected marker
+			printf "\033[7s*"
+		fi
+		echo ") $i"
+		selecting=true
+	done
+	pos=1
+	while [ $selecting = true ]; do
+		# http://www.unix.com/shell-programming-scripting/
+		# 	103580-bash-any-way-get-user-input-without-requiring-
+		#	them-hit-enter-key.html
+		read -s -n 1 selection > /dev/null
+		case $selection in
+			j)    pos=$(($pos + 1));;
+			k)    pos=$(($pos - 1));;
+			h|q)  clear; exit 1;;
+			l|"") selecting=false; continue;;
+			*)    continue;;
+		esac
+		# Wrap around
+		if [ $pos -lt 1 ]; then
+			pos=$max
+		elif [ $pos -gt $max ]; then
+			pos=1
+		fi
+		# Restore cursor position and draw space
+		printf "\033[8u "
+		tput cup $(($pos + $add)) 0
+		# Save current cursor position and draw selected marker
+		printf "\033[7s*"
+	done
+	clear
+	selected_file="$(echo "$entries" | head -n $pos | tail -n 1)"
+	if [ -f "$selected_file" ]; then
+		echo The destination file $selected_file already exists.
+		read -s -p "Overwrite [y/n/q/r]? " -n 1 selection
+		echo
+		if [ "$selection" = "r" ]; then
+			read -p "New name [q: abort]: " selection
+			if [ "$selection" = "q" ] || [ "$selection" = "" ]; then
+				exit 1
+			fi
+		elif [ "$selection" != "y" ]; then
+			exit 1
+		else
+			selection="$selected_file"
+		fi
+	else
+		selection="$selected_file"
+	fi
+	cp -r "$template_dir/$selected_file" "$selection"
+	if [ "$?" = "0" ]; then
+		exit 0
+	else
+		echo Error copying template file.
+		exit 2
+	fi
+else
+	touch "$1"
+fi

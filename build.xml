@@ -13,6 +13,7 @@
 </property>
 
 <property name="mdpc.file.install">
+ma_new_file /usr/bin
 templates /usr/share/mdvl
 </property>
 
