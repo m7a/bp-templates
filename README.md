@@ -7,7 +7,7 @@ lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["mdvl", "templates", "tex", "vector", "new", "file", "ma_new_file"]
 x-masysma-version: 1.0.0
-x-masysma-repository: https://www.github.com/m7a/lp-templates
+x-masysma-repository: https://www.github.com/m7a/bp-templates
 x-masysma-website: https://masysma.lima-city.de/32/templates.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
