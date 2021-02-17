@@ -5,11 +5,10 @@ title: Ma_Sys.ma “New File” Templates
 date: 2021/02/02 19:12:11
 lang: en-US
 author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
-keywords: ["mdvl", "templates", "tex", "vector", "new", "file", "ma_new_file"]
+keywords: ["mdvl", "templates", "tex", "vector", "new", "file", "ma_new_file", "cc0"]
 x-masysma-version: 1.0.0
 x-masysma-repository: https://www.github.com/m7a/bp-templates
 x-masysma-website: https://masysma.lima-city.de/32/templates.xhtml
-x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
   For further info send an e-mail to Ma_Sys.ma@web.de.
@@ -94,3 +93,13 @@ to `ma_new_file` in `vifm`.
  * Code quality could be enhanced. Given that such script is likely to already
    exist with a better implementation, it seems sensible to replace it with an
    existing alternative once such an alternative is found.
+
+License Information
+===================
+
+Ma_Sys.ma Templates are newly licensed under CC0-1.0 to make sure that
+the templates can be freely used to create documents under any license of
+the respective author's choice.
+
+See /usr/share/common-licenses/CC0-1.0 on any Debian system or
+<https://creativecommons.org/publicdomain/zero/1.0/legalcode>

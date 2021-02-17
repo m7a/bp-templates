@@ -1,3 +1,10 @@
+mdvl-templates (1.1.2) stable; urgency=medium
+
+  * Re-license to CC0 to clarify that documents created from the templates need
+    not be GPL.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Wed, 17 Feb 2021 23:18:46 +0100
+
 mdvl-templates (1.1.1) stable; urgency=medium
 
   * Add missing ma_new_file script.

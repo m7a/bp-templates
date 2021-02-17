@@ -11,6 +11,10 @@
  This package provides useful template files for various formats below
  /usr/share/mdvl/templates.
 </property>
+<property name="mdpc.lblock">
+License: CC0-1.0
+ See /usr/share/common-licenses/CC0-1.0 on any Debian system.
+</property>
 
 <property name="mdpc.file.install">
 ma_new_file /usr/bin
