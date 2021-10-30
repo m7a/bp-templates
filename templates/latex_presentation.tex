@@ -17,6 +17,21 @@
 % Always include these two at the end
 \usepackage{microtype}       % Better formatting of text (load at the end)
 \usepackage{hyperref}        % Automatic hyperlinks (load at the end)
+
+\newcommand{\cmd}[1]{{\ttfamily#1}} % Command typesetting
+
+% -- Configure Slide Numbers --
+\newcounter{malastslide}
+% -> http://tex.stackexchange.com/questions/137022/how-to-insert-page-number-in-
+% 							beamer-navigation-bars
+\beamertemplatenavigationsymbolsempty
+\newcommand\maaprefix{} % Override to set appendix
+\newcommand\mafootcolor{black}
+\addtobeamertemplate{navigation symbols}{}{\usebeamerfont{footline}%
+	\color{\mafootcolor}\hspace{1em}\maaprefix\insertframenumber/%
+	\maaprefix\inserttotalframenumber}
+% -- End Configure Slide Numbers --
+
 \begin{document}
 \title{Test Presentation}
 \author{Linux-Fan}
