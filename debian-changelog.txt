@@ -1,3 +1,9 @@
+mdvl-templates (1.1.4) stable; urgency=medium
+
+  * Rebuild with ascii art templates.
+
+ -- Linux-Fan, Ma_Sys.ma <Ma_Sys.ma@web.de>  Thu, 13 Jan 2022 21:38:08 +0100
+
 mdvl-templates (1.1.3) stable; urgency=medium
 
   * Add more useful macros to LaTeX presentation template.
