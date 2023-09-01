@@ -8,7 +8,7 @@ author: ["Linux-Fan, Ma_Sys.ma (Ma_Sys.ma@web.de)"]
 keywords: ["mdvl", "templates", "tex", "vector", "new", "file", "ma_new_file", "cc0"]
 x-masysma-version: 1.0.0
 x-masysma-repository: https://www.github.com/m7a/bp-templates
-x-masysma-website: https://masysma.lima-city.de/32/templates.xhtml
+x-masysma-website: https://masysma.net/32/templates.xhtml
 x-masysma-copyright: |
   Copyright (c) 2020 Ma_Sys.ma.
   For further info send an e-mail to Ma_Sys.ma@web.de.
